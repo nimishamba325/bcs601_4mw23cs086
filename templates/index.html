@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Temperature Converter</title>
+</head>
+<body style="text-align:center; font-family:Arial;">
+
+    <h2>Temperature Converter (Cloud)</h2>
+
+    <form method="POST">
+        <input type="number" step="any" name="temp" placeholder="Enter temperature" required>
+        <br><br>
+
+        <select name="conversion">
+            <option value="c_to_f">Celsius to Fahrenheit</option>
+            <option value="f_to_c">Fahrenheit to Celsius</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">Convert</button>
+    </form>
+
+    <h3>{{ result }}</h3>
+
+</body>
+</html>
